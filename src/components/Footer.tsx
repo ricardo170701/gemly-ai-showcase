@@ -34,9 +34,10 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li>contacto@gemly.com</li>
-              <li>+34 900 123 456</li>
-              <li>Madrid, España</li>
+              <li><a href="mailto:gemlytech@gmail.com" className="hover:text-foreground transition-colors">gemlytech@gmail.com</a></li>
+              <li>+58 414 7905070</li>
+              <li>+58 412 1878514</li>
+              <li>Anzoategui, Venezuela</li>
             </ul>
           </div>
         </div>
@@ -47,17 +48,7 @@ export const Footer = () => {
           <p className="text-muted-foreground">
             © 2024 Gemly. Todos los derechos reservados.
           </p>
-          <div className="flex space-x-6 mt-4 md:mt-0">
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Privacidad
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Términos
-            </a>
-            <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-              Cookies
-            </a>
-          </div>
+          
         </div>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.svg";
 
 export const Navbar = () => {
   return (
@@ -7,8 +8,8 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">G</span>
+            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+              <img src={logo} alt="Gemly Logo" className="w-6 h-6" />
             </div>
             <span className="text-2xl font-bold gradient-text">Gemly</span>
           </div>
@@ -27,9 +28,7 @@ export const Navbar = () => {
           </div>
 
           {/* CTA Button */}
-          <Button className="btn-hero">
-            Solicitar Demo
-          </Button>
+          
         </div>
       </div>
     </nav>

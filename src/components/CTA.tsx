@@ -21,24 +21,15 @@ export const CTA = () => {
                 Solicita una demostración gratuita y comienza tu viaje hacia la innovación digital.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-                <Button className="btn-hero group text-lg px-8 py-4">
-                  Solicitar Demostración Gratuita
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </Button>
-                <Button variant="outline" className="bg-transparent border-border text-foreground hover:bg-muted text-lg px-8 py-4">
-                  Hablar con un Experto
-                </Button>
-              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">contacto@gemly.com</span>
+                  <a href="mailto:gemlytech@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">gemlytech@gmail.com</a>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
-                  <span className="text-muted-foreground">+34 900 123 456</span>
+                  <span className="text-muted-foreground">+58 414 7905070</span>
                 </div>
               </div>
             </CardContent>

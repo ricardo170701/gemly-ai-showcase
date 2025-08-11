@@ -5,7 +5,7 @@ import heroBackground from "@/assets/hero-background.jpg";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 md:pt-24">
       {/* Background */}
       <div className="absolute inset-0">
         <img 
@@ -44,23 +44,13 @@ export const Hero = () => {
           </p>
         </ScrollAnimation>
 
-        <ScrollAnimation animation="fade-up">
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button className="btn-hero group">
-              Solicitar Demostración
-              <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button variant="outline" className="bg-transparent border-border text-foreground hover:bg-muted">
-              Ver Nuestros Proyectos
-            </Button>
-          </div>
-        </ScrollAnimation>
+        
 
         {/* Stats */}
         <ScrollAnimation animation="fade-up">
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="glass-card p-6">
-              <div className="text-3xl font-bold gradient-text mb-2">50+</div>
+              <div className="text-3xl font-bold gradient-text mb-2">10+</div>
               <div className="text-muted-foreground">Proyectos Completados</div>
             </div>
             <div className="glass-card p-6">

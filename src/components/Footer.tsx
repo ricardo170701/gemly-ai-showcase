@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { generateMailtoLink, emailTemplates } from "@/lib/email-templates";
 
 export const Footer = () => {
   return (
@@ -34,7 +35,10 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="mailto:gemlytech@gmail.com" className="hover:text-foreground transition-colors">gemlytech@gmail.com</a></li>
+                             <li><a 
+                 href={generateMailtoLink(emailTemplates.general())}
+                 className="hover:text-foreground transition-colors"
+               >gemlytech@gmail.com</a></li>
               <li>+58 414 7905070</li>
               <li>+58 412 1878514</li>
               <li>Anzoategui, Venezuela</li>

@@ -4,8 +4,11 @@ import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Code, Layers, Smartphone, ArrowRight, CheckCircle } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
+import { openEmail, emailTemplates } from "@/lib/email-templates";
 
 const SoftwareMedida = () => {
+
   const features = [
     "Desarrollo 100% personalizado",
     "Arquitectura escalable y robusta",
@@ -38,8 +41,22 @@ const SoftwareMedida = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+      <section className="pt-32 pb-20 relative overflow-hidden">
+        {/* Background */}
+        <div className="absolute inset-0">
+          <img 
+            src={heroBackground} 
+            alt="Hero background" 
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90" />
+        </div>
+
+        {/* Floating Elements */}
+        <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-20 float" />
+        <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-secondary rounded-full opacity-15 float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/3 right-10 w-16 h-16 bg-gradient-hero rounded-full opacity-25 float" style={{ animationDelay: '4s' }} />
+
         <div className="container mx-auto px-6 relative z-10">
           <ScrollAnimation animation="fade-up">
             <div className="max-w-4xl mx-auto text-center">
@@ -54,15 +71,17 @@ const SoftwareMedida = () => {
                 Soluciones de software completamente personalizadas que se integran perfectamente 
                 con tu infraestructura existente y potencian el crecimiento de tu empresa.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-primary">
-                  Solicitar Cotización
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-                <Button variant="outline" size="lg">
-                  Ver Portafolio
-                </Button>
-              </div>
+                             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                   <Button 
+                    size="lg" 
+                    className="bg-gradient-primary"
+                    onClick={() => openEmail(emailTemplates.softwareMedida())}
+                  >
+                   Solicitar Cotización
+                   <ArrowRight className="w-4 h-4 ml-2" />
+                 </Button>
+                 
+               </div>
             </div>
           </ScrollAnimation>
         </div>
@@ -208,10 +227,14 @@ const SoftwareMedida = () => {
                 Contáctanos para una consulta gratuita y descubre cómo podemos 
                 ayudarte a materializar tu visión
               </p>
-              <Button size="lg" className="bg-gradient-primary">
-                Iniciar Proyecto
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
+                                                           <Button 
+                  size="lg" 
+                  className="bg-gradient-primary"
+                  onClick={() => openEmail(emailTemplates.softwareMedida())}
+                >
+                 Iniciar Proyecto
+                 <ArrowRight className="w-4 h-4 ml-2" />
+               </Button>
             </div>
           </ScrollAnimation>
         </div>

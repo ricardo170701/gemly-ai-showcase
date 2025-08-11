@@ -24,7 +24,6 @@ const App = () => (
           <Route path="/machine-learning" element={<MachineLearning />} />
           <Route path="/software-medida" element={<SoftwareMedida />} />
           <Route path="/analisis-datos" element={<AnalisisDatos />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

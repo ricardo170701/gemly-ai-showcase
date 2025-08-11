@@ -1,0 +1,195 @@
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
+import { ScrollAnimation } from "@/components/ScrollAnimation";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Brain, Target, BarChart3, ArrowRight, CheckCircle } from "lucide-react";
+
+const MachineLearning = () => {
+  const features = [
+    "Modelos personalizados para tu negocio",
+    "Algoritmos de última generación",
+    "Análisis predictivo avanzado",
+    "Entrenamiento continuo de modelos",
+    "Integración con tus sistemas",
+    "Soporte técnico especializado"
+  ];
+
+  const applications = [
+    {
+      title: "Análisis Predictivo",
+      description: "Predice tendencias y comportamientos futuros basados en datos históricos.",
+      icon: BarChart3
+    },
+    {
+      title: "Reconocimiento de Patrones",
+      description: "Identifica patrones complejos en grandes volúmenes de datos.",
+      icon: Target
+    },
+    {
+      title: "Sistemas de Recomendación",
+      description: "Crea experiencias personalizadas para tus usuarios y clientes.",
+      icon: Brain
+    }
+  ];
+
+  return (
+    <div className="min-h-screen">
+      <Navbar />
+      
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 bg-gradient-hero relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
+        <div className="container mx-auto px-6 relative z-10">
+          <ScrollAnimation animation="fade-up">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6">
+                <Brain className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium">Machine Learning</span>
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                <span className="gradient-text">Machine Learning</span> personalizado para tu negocio
+              </h1>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                Creamos modelos de ML específicos para tu negocio que aprenden y se adaptan 
+                a tus necesidades particulares, generando insights valiosos y predicciones precisas.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-gradient-primary">
+                  Solicitar Consulta Técnica
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Button>
+                <Button variant="outline" size="lg">
+                  Ver Demos
+                </Button>
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <ScrollAnimation animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">
+                Ventajas de nuestros <span className="gradient-text">modelos ML</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Desarrollamos soluciones de machine learning que se adaptan perfectamente a tu industria
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            {features.map((feature, index) => (
+              <ScrollAnimation key={index} animation="fade-up">
+                <div className="flex items-center gap-3 p-4 rounded-lg glass-card hover:shadow-elevated transition-all duration-300">
+                  <CheckCircle className="w-6 h-6 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">{feature}</span>
+                </div>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Applications Section */}
+      <section className="py-20 bg-gradient-to-br from-background to-muted/20">
+        <div className="container mx-auto px-6">
+          <ScrollAnimation animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">
+                Aplicaciones <span className="gradient-text">principales</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Descubre cómo el machine learning puede potenciar diferentes aspectos de tu negocio
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {applications.map((app, index) => (
+              <ScrollAnimation key={index} animation="fade-up">
+                <Card className="glass-card hover:shadow-elevated transition-all duration-500 group hover:scale-105">
+                  <CardHeader>
+                    <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
+                      <app.icon className="w-6 h-6 text-primary-foreground" />
+                    </div>
+                    <CardTitle className="text-xl mb-3">{app.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {app.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <ScrollAnimation animation="fade-up">
+            <div className="text-center mb-16">
+              <h2 className="text-4xl font-bold mb-6">
+                Nuestro proceso de <span className="gradient-text">desarrollo</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Metodología probada para crear modelos de ML efectivos y escalables
+              </p>
+            </div>
+          </ScrollAnimation>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            {[
+              { step: "01", title: "Análisis de Datos", desc: "Evaluamos y preparamos tus datos" },
+              { step: "02", title: "Diseño del Modelo", desc: "Seleccionamos algoritmos óptimos" },
+              { step: "03", title: "Entrenamiento", desc: "Entrenamos y validamos el modelo" },
+              { step: "04", title: "Implementación", desc: "Desplegamos y monitoreamos" }
+            ].map((item, index) => (
+              <ScrollAnimation key={index} animation="fade-up">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-primary-foreground font-bold text-lg">{item.step}</span>
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.desc}</p>
+                </div>
+              </ScrollAnimation>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-6">
+          <ScrollAnimation animation="fade-up">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-4xl font-bold mb-6">
+                ¿Listo para implementar ML en tu empresa?
+              </h2>
+              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                Nuestros expertos en machine learning te ayudarán a identificar las mejores 
+                oportunidades para tu negocio
+              </p>
+              <Button size="lg" className="bg-gradient-primary">
+                Hablar con un Experto
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </div>
+          </ScrollAnimation>
+        </div>
+      </section>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default MachineLearning;

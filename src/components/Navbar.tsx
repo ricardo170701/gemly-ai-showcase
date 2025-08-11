@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ChevronDown } from "lucide-react";
 import logo from "@/assets/logo.svg";
 
 export const Navbar = () => {
@@ -16,19 +17,44 @@ export const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#servicios" className="text-muted-foreground hover:text-foreground transition-colors">
-              Servicios
-            </a>
-            <a href="#proceso" className="text-muted-foreground hover:text-foreground transition-colors">
+            <div className="relative group">
+              <button className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+                Servicios
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              <div className="absolute top-full left-0 mt-2 w-64 bg-background/95 backdrop-blur-md border border-border rounded-lg shadow-elevated opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <div className="p-2">
+                  <a href="/automatizacion-ai" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
+                    <div className="font-medium">Automatización AI</div>
+                    <div className="text-xs text-muted-foreground">Sistemas inteligentes</div>
+                  </a>
+                  <a href="/machine-learning" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
+                    <div className="font-medium">Machine Learning</div>
+                    <div className="text-xs text-muted-foreground">Modelos personalizados</div>
+                  </a>
+                  <a href="/software-medida" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
+                    <div className="font-medium">Software a Medida</div>
+                    <div className="text-xs text-muted-foreground">Desarrollo personalizado</div>
+                  </a>
+                  <a href="/analisis-datos" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
+                    <div className="font-medium">Análisis de Datos</div>
+                    <div className="text-xs text-muted-foreground">Insights accionables</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a href="/#proceso" className="text-muted-foreground hover:text-foreground transition-colors">
               Proceso
             </a>
-            <a href="#contacto" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a href="/#contacto" className="text-muted-foreground hover:text-foreground transition-colors">
               Contacto
             </a>
           </div>
 
           {/* CTA Button */}
-          
+          <Button className="bg-gradient-primary">
+            Contactar
+          </Button>
         </div>
       </div>
     </nav>

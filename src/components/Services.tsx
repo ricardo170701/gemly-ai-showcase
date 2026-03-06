@@ -1,8 +1,8 @@
 import { ScrollAnimation } from "./ScrollAnimation";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Bot, Code, Zap, Brain, Database, Shield } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { openEmail, emailTemplates } from "@/lib/email-templates";
 
 const services = [
   {
@@ -70,11 +70,12 @@ export const Services = () => {
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     {service.description}
                   </p>
-                  {service.href && (
-                    <a href={service.href} className="inline-flex items-center text-sm text-gold hover:text-gold-light transition-colors mt-auto font-medium">
-                      Saber más <ArrowRight className="w-4 h-4 ml-1" />
-                    </a>
-                  )}
+                  <button 
+                    onClick={() => openEmail(emailTemplates.general())}
+                    className="inline-flex items-center text-sm text-gold hover:text-gold-light transition-colors mt-auto font-medium"
+                  >
+                    Saber más <ArrowRight className="w-4 h-4 ml-1" />
+                  </button>
                 </CardContent>
               </Card>
             </ScrollAnimation>

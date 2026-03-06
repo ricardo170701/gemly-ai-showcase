@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ScrollAnimation } from "./ScrollAnimation";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Gem } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
+import { openEmail, emailTemplates } from "@/lib/email-templates";
 
 export const Hero = () => {
   return (
@@ -11,56 +12,56 @@ export const Hero = () => {
         <img 
           src={heroBackground} 
           alt="Hero background" 
-          className="w-full h-full object-cover opacity-30"
+          className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-background/90 via-background/70 to-background/90" />
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/80 to-background/95" />
       </div>
 
       {/* Floating Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-20 float" />
-      <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-secondary rounded-full opacity-15 float" style={{ animationDelay: '2s' }} />
-      <div className="absolute top-1/3 right-10 w-16 h-16 bg-gradient-hero rounded-full opacity-25 float" style={{ animationDelay: '4s' }} />
+      <div className="absolute top-20 left-10 w-20 h-20 bg-gradient-primary rounded-full opacity-15 float" />
+      <div className="absolute bottom-32 right-16 w-32 h-32 bg-gradient-gold rounded-full opacity-10 float" style={{ animationDelay: '2s' }} />
+      <div className="absolute top-1/3 right-10 w-16 h-16 bg-gradient-primary rounded-full opacity-20 float" style={{ animationDelay: '4s' }} />
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
         <ScrollAnimation animation="fade-up">
           <div className="flex items-center justify-center mb-6">
-            <Sparkles className="w-6 h-6 text-primary mr-3" />
-            <span className="text-primary font-medium">Innovación impulsada por IA</span>
+            <Gem className="w-6 h-6 text-gold mr-3" />
+            <span className="text-gold font-medium">Artesanos digitales</span>
           </div>
         </ScrollAnimation>
 
         <ScrollAnimation animation="fade-up">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
-            <span className="gradient-text">Gemly:</span><br />
-            Software a medida con el poder de la IA
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+            Transformamos ideas en bruto en{" "}
+            <span className="gradient-text-gold">joyas tecnológicas.</span>
           </h1>
         </ScrollAnimation>
 
         <ScrollAnimation animation="fade-up">
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Desarrollamos soluciones de software únicas utilizando las últimas tecnologías de 
-            inteligencia artificial para transformar tu negocio y maximizar su potencial.
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+            Desarrollo de software a medida potenciado por inteligencia artificial. 
+            Ayudamos a negocios en Lechería y Barcelona a automatizar procesos, 
+            vender más y operar 24/7 con aplicaciones hechas exclusivamente para ellos.
           </p>
         </ScrollAnimation>
 
-        
-
-        {/* Stats */}
         <ScrollAnimation animation="fade-up">
-          <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
-            <div className="glass-card p-6">
-              <div className="text-3xl font-bold gradient-text mb-2">10+</div>
-              <div className="text-muted-foreground">Proyectos Completados</div>
-            </div>
-            <div className="glass-card p-6">
-              <div className="text-3xl font-bold gradient-text mb-2">98%</div>
-              <div className="text-muted-foreground">Satisfacción del Cliente</div>
-            </div>
-            <div className="glass-card p-6">
-              <div className="text-3xl font-bold gradient-text mb-2">24/7</div>
-              <div className="text-muted-foreground">Soporte Técnico</div>
-            </div>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <button 
+              className="btn-gold"
+              onClick={() => openEmail(emailTemplates.general())}
+            >
+              Solicita tu auditoría digital gratuita
+            </button>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-primary/50 text-foreground hover:bg-primary/10 px-8 py-4 text-lg h-auto"
+              onClick={() => document.getElementById('enfoque')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              Conoce nuestro enfoque
+            </Button>
           </div>
         </ScrollAnimation>
       </div>

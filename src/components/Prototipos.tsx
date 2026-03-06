@@ -2,6 +2,7 @@ import { ScrollAnimation } from "./ScrollAnimation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Package, MessageSquareText, BarChart3, ArrowRight } from "lucide-react";
+import { openEmail, emailTemplates } from "@/lib/email-templates";
 
 const demos = [
   {
@@ -49,8 +50,12 @@ export const Prototipos = () => {
                   <p className="text-muted-foreground leading-relaxed mb-6 flex-1">
                     {demo.description}
                   </p>
-                  <Button variant="outline" className="w-full border-gold/30 text-gold hover:bg-gold/10 group-hover:border-gold/60">
-                    Ver demo <ArrowRight className="w-4 h-4 ml-2" />
+                  <Button 
+                    variant="outline" 
+                    className="w-full border-gold/30 text-gold hover:bg-gold/10 group-hover:border-gold/60"
+                    onClick={() => openEmail(emailTemplates.general())}
+                  >
+                    Saber más <ArrowRight className="w-4 h-4 ml-2" />
                   </Button>
                 </CardContent>
               </Card>

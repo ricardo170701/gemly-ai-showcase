@@ -8,56 +8,31 @@ export const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 glass-card border-b border-border/20">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
           <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 bg-black rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <img src={logo} alt="Gemly Logo" className="w-6 h-6" />
             </div>
             <span className="text-2xl font-bold gradient-text">Gemly</span>
           </a>
 
-          {/* Navigation Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <div className="relative group">
-              <button className=" hidden text-muted-foreground hover:text-foreground transition-colors  items-center gap-1"> 
-                <ChevronDown className="w-4 h-4" />
-              </button>
-              <div className="absolute top-full left-0 mt-2 w-64 bg-background/95 backdrop-blur-md border border-border rounded-lg shadow-elevated opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                <div className="p-2">
-                  <a href="/automatizacion-ai" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
-                    <div className="font-medium">Automatización AI</div>
-                    <div className="text-xs text-muted-foreground">Sistemas inteligentes</div>
-                  </a>
-                  <a href="/machine-learning" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
-                    <div className="font-medium">Machine Learning</div>
-                    <div className="text-xs text-muted-foreground">Modelos personalizados</div>
-                  </a>
-                  <a href="/software-medida" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
-                    <div className="font-medium">Software a Medida</div>
-                    <div className="text-xs text-muted-foreground">Desarrollo personalizado</div>
-                  </a>
-                  <a href="/analisis-datos" className="block px-4 py-3 text-sm hover:bg-muted rounded-md transition-colors">
-                    <div className="font-medium">Análisis de Datos</div>
-                    <div className="text-xs text-muted-foreground">Insights accionables</div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <a href="/#proceso" className="text-muted-foreground hover:text-foreground transition-colors">
-              Proceso
+            <a href="/#enfoque" className="text-muted-foreground hover:text-foreground transition-colors">
+              Enfoque
+            </a>
+            <a href="/#equipo" className="text-muted-foreground hover:text-foreground transition-colors">
+              Equipo
             </a>
             <a href="/#contacto" className="text-muted-foreground hover:text-foreground transition-colors">
               Contacto
             </a>
           </div>
 
-                     {/* CTA Button */}
-           <Button 
-             className="bg-gradient-primary"
-             onClick={() => openEmail(emailTemplates.general())}
-           >
-             Contactar
-           </Button>
+          <button 
+            className="btn-gold !px-6 !py-2 !text-sm !rounded-lg"
+            onClick={() => openEmail(emailTemplates.general())}
+          >
+            Contactar
+          </button>
         </div>
       </div>
     </nav>

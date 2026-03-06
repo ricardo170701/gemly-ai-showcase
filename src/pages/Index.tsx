@@ -1,7 +1,10 @@
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Services } from "@/components/Services";
-import { Process } from "@/components/Process";
+import { Enfoque } from "@/components/Enfoque";
+import { PorQueGemly } from "@/components/PorQueGemly";
+import { Equipo } from "@/components/Equipo";
+import { Prototipos } from "@/components/Prototipos";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
@@ -11,7 +14,10 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Services />
-      <Process />
+      <Enfoque />
+      <PorQueGemly />
+      <Equipo />
+      <Prototipos />
       <CTA />
       <Footer />
     </div>

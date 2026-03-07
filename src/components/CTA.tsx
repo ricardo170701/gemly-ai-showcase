@@ -5,7 +5,7 @@ import { openEmail, emailTemplates } from "@/lib/email-templates";
 
 export const CTA = () => {
   return (
-    <section id="contacto" className="py-24">
+    <section id="contacto" className="py-16 md:py-24">
       <div className="container mx-auto px-6">
         <ScrollAnimation animation="fade-up">
           <Card className="glass-card relative overflow-hidden">

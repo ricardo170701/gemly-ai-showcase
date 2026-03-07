@@ -9,9 +9,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <img src={logo} alt="Gemly Logo" className="w-6 h-6" />
-            </div>
+            <img src={logo} alt="Gemly Logo" className="w-8 h-8" />
             <span className="text-2xl font-bold gradient-text">Gemly</span>
           </a>
 

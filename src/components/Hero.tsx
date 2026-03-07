@@ -34,7 +34,7 @@ export const Hero = () => {
         <ScrollAnimation animation="fade-up">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
             Transformamos ideas en bruto en{" "}
-            <span className="gradient-text-gold">joyas tecnológicas.</span>
+            <span className="gradient-text">joyas tecnológicas.</span>
           </h1>
         </ScrollAnimation>
 

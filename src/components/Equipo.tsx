@@ -40,7 +40,7 @@ export const Equipo = () => {
         <ScrollAnimation animation="fade-up">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              El <span className="gradient-text-gold">equipo</span>
+              El <span className="gradient-text">equipo</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Cinco profesionales con experiencia individual que ahora unen fuerzas para crear algo extraordinario.

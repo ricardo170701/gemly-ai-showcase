@@ -47,8 +47,8 @@ export const PorQueGemly = () => {
             <ScrollAnimation key={index} animation="fade-up">
               <Card className="glass-card hover:shadow-elevated transition-all duration-500 group hover:-translate-y-1">
                 <CardContent className="p-8 flex items-start gap-6">
-                  <div className="w-14 h-14 bg-gradient-gold rounded-xl flex items-center justify-center shrink-0 group-hover:shadow-gold-glow transition-all duration-300">
-                    <benefit.icon className="w-7 h-7 text-gold-foreground" />
+                  <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center shrink-0 group-hover:shadow-glow transition-all duration-300">
+                    <benefit.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>

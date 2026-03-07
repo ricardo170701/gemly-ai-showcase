@@ -48,7 +48,7 @@ export const Services = () => {
         <ScrollAnimation animation="fade-up">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Lo que <span className="gradient-text-gold">sabemos hacer</span>
+              Lo que <span className="gradient-text">sabemos hacer</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Cada servicio es una herramienta en nuestro taller. Elegimos la correcta según lo que tu negocio necesita.
@@ -61,8 +61,8 @@ export const Services = () => {
             <ScrollAnimation key={index} animation="fade-up">
               <Card className="glass-card hover:shadow-elevated transition-all duration-500 group hover:-translate-y-2 h-full border-border/30 hover:border-gold/20">
                 <CardHeader>
-                  <div className="w-12 h-12 bg-gradient-gold rounded-xl flex items-center justify-center mb-4 group-hover:shadow-gold-glow transition-all duration-300">
-                    <service.icon className="w-6 h-6 text-gold-foreground" />
+                  <div className="w-12 h-12 bg-gradient-primary rounded-xl flex items-center justify-center mb-4 group-hover:shadow-glow transition-all duration-300">
+                    <service.icon className="w-6 h-6 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-xl mb-1">{service.title}</CardTitle>
                 </CardHeader>

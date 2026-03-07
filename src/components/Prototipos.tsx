@@ -43,8 +43,8 @@ export const Prototipos = () => {
             <ScrollAnimation key={index} animation="fade-up">
               <Card className="glass-card hover:shadow-elevated transition-all duration-500 group hover:-translate-y-2 h-full flex flex-col">
                 <CardContent className="p-8 flex flex-col flex-1">
-                  <div className="w-14 h-14 bg-gradient-gold rounded-xl flex items-center justify-center mb-6 group-hover:shadow-gold-glow transition-all duration-300">
-                    <demo.icon className="w-7 h-7 text-gold-foreground" />
+                  <div className="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:shadow-glow transition-all duration-300">
+                    <demo.icon className="w-7 h-7 text-primary-foreground" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{demo.title}</h3>
                   <p className="text-muted-foreground leading-relaxed mb-6 flex-1">

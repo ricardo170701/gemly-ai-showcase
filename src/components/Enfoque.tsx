@@ -32,7 +32,7 @@ export const Enfoque = () => {
         <ScrollAnimation animation="fade-up">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Así <span className="gradient-text-gold">tallamos</span> tu idea
+              Así <span className="gradient-text">tallamos</span> tu idea
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               No creemos en el software de talla única. Cada proyecto es una pieza única.

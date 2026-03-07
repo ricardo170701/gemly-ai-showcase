@@ -4,32 +4,32 @@ const team = [
   {
     name: "Ricardo",
     initials: "R",
-    role: "Co-fundador & Desarrollo",
-    experience: "Ha desarrollado proyectos para el sector fintech y comercio electrónico de manera independiente."
+    role: "Líder de Proyecto",
+    experience: "Gestión y planificación de productos digitales para startups y empresas locales."
   },
   {
     name: "Ángel",
     initials: "Á",
-    role: "Co-fundador & IA",
-    experience: "Ha desarrollado proyectos de automatización e inteligencia artificial de manera independiente."
+    role: "Líder de Desarrollo",
+    experience: "Arquitectura de software e integración de inteligencia artificial en soluciones empresariales."
   },
   {
     name: "Daniel",
     initials: "D",
-    role: "Co-fundador & Backend",
-    experience: "Ha desarrollado proyectos para el sector salud y logística de manera independiente."
-  },
-  {
-    name: "David",
-    initials: "Da",
-    role: "Co-fundador & Frontend",
-    experience: "Ha desarrollado proyectos para retail y educación de manera independiente."
+    role: "Frontend Developer",
+    experience: "Interfaces modernas y experiencias de usuario para aplicaciones web y móviles."
   },
   {
     name: "Vicente",
     initials: "V",
-    role: "Co-fundador & Diseño",
-    experience: "Ha desarrollado proyectos de diseño UX/UI para startups de manera independiente."
+    role: "Backend Developer",
+    experience: "APIs robustas, bases de datos y lógica de negocio para sistemas escalables."
+  },
+  {
+    name: "David",
+    initials: "Da",
+    role: "DevOps",
+    experience: "Infraestructura cloud, despliegues automatizados y monitoreo de sistemas en producción."
   }
 ];
 

@@ -31,7 +31,7 @@ export const CTA = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
                 <div className="flex items-center justify-center space-x-3">
                   <Mail className="w-5 h-5 text-gold" />
-                  <a href="mailto:hola@gemly.dev" className="text-muted-foreground hover:text-foreground transition-colors">hola@gemly.dev</a>
+                  <a href="mailto:gemlytech@gmail.com" className="text-muted-foreground hover:text-foreground transition-colors">gemlytech@gmail.com</a>
                 </div>
                 <div className="flex items-center justify-center space-x-3">
                   <MapPin className="w-5 h-5 text-gold" />

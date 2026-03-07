@@ -31,7 +31,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="mailto:hola@gemly.dev" className="hover:text-foreground transition-colors">hola@gemly.dev</a></li>
+              <li><a href="mailto:gemlytech@gmail.com" className="hover:text-foreground transition-colors">gemlytech@gmail.com</a></li>
               <li>+58 414 7905070</li>
               <li>+58 412 1878514</li>
               <li>Lechería, Edo. Anzoátegui</li>

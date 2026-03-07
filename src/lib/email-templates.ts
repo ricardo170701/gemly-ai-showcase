@@ -103,7 +103,7 @@ Saludos cordiales.`,
 export const generateMailtoLink = (template: EmailTemplate): string => {
   const subject = encodeURIComponent(template.subject);
   const body = encodeURIComponent(template.body);
-  return `mailto:hola@gemly.dev?subject=${subject}&body=${body}`;
+  return `mailto:gemlytech@gmail.com?subject=${subject}&body=${body}`;
 };
 
 export const openEmail = (template: EmailTemplate): void => {

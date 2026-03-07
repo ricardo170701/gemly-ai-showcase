@@ -4,32 +4,32 @@ const team = [
   {
     name: "Ricardo",
     initials: "R",
-    role: "Líder de Proyecto",
-    experience: "Gestión y planificación de productos digitales para startups y empresas locales."
+    role: "El Maestro de Taller",
+    experience: "Coordina los proyectos desde el primer boceto hasta la entrega final. Se asegura de que cada joya tecnológica cumpla los sueños del cliente, los plazos y la calidad."
   },
   {
     name: "Ángel",
     initials: "Á",
-    role: "Líder de Desarrollo",
-    experience: "Arquitectura de software e integración de inteligencia artificial en soluciones empresariales."
+    role: "El Orfebre de Ideas",
+    experience: "Mira tu idea en bruto y visualiza la joya en la que puede convertirse. Diseña la arquitectura y entreteje inteligencia artificial en cada pieza."
   },
   {
     name: "Daniel",
     initials: "D",
-    role: "Frontend Developer",
-    experience: "Interfaces modernas y experiencias de usuario para aplicaciones web y móviles."
+    role: "El Tallador de Interfaces",
+    experience: "Con mano firme y ojo estético, talla cada pantalla, botón y animación para crear experiencias que no solo funcionan, sino que se disfrutan al tacto."
   },
   {
     name: "Vicente",
     initials: "V",
-    role: "Backend Developer",
-    experience: "APIs robustas, bases de datos y lógica de negocio para sistemas escalables."
+    role: "El Forjador de Estructuras",
+    experience: "Forja la estructura interna que sostiene la joya. Su código es el metal invisible que hace que todo funcione sin grietas, sin importar cuánto peso soporte."
   },
   {
     name: "David",
     initials: "Da",
-    role: "DevOps",
-    experience: "Infraestructura cloud, despliegues automatizados y monitoreo de sistemas en producción."
+    role: "El Guardián del Brillo",
+    experience: "Cuida cada pieza una vez entregada: vigila que esté siempre disponible, que los datos estén seguros y que el brillo 24/7 nunca se apague."
   }
 ];
 

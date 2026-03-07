@@ -7,8 +7,8 @@ import { openEmail, emailTemplates } from "@/lib/email-templates";
 const demos = [
   {
     icon: Package,
-    title: "Gestor de inventarios para PYME",
-    description: "App móvil para escanear productos y alertas de stock. Control total de tu inventario desde el teléfono."
+    title: "Control de acceso a oficinas",
+    description: "App para gestionar entradas, permisos y registros de acceso en tiempo real."
   },
   {
     icon: MessageSquareText,

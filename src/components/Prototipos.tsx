@@ -24,7 +24,7 @@ const demos = [
 
 export const Prototipos = () => {
   return (
-    <section className="py-24 bg-gradient-to-br from-muted/20 to-background">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-muted/20 to-background">
       <div className="container mx-auto px-6">
         <ScrollAnimation animation="fade-up">
           <div className="text-center mb-20">

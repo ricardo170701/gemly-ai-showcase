@@ -15,7 +15,7 @@ const steps = [
   },
   {
     icon: Cpu,
-    title: "Tallamos con IA",
+    title: "Moldeamos con IA",
     description: "Usamos inteligencia artificial para acelerar el desarrollo, pero el toque humano es nuestro."
   },
   {

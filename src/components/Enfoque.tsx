@@ -15,7 +15,7 @@ const steps = [
   },
   {
     icon: Cpu,
-    title: "Tallamos con IA",
+    title: "Moldeamos con IA",
     description: "Usamos inteligencia artificial para acelerar el desarrollo, pero el toque humano es nuestro."
   },
   {
@@ -32,7 +32,7 @@ export const Enfoque = () => {
         <ScrollAnimation animation="fade-up">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Así <span className="gradient-text">tallamos</span> tu idea
+              Así <span className="gradient-text">moldeamos</span> tu idea
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               No creemos en el software de talla única. Cada proyecto es una pieza única.
@@ -48,7 +48,6 @@ export const Enfoque = () => {
                   <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:shadow-glow transition-all duration-300">
                     <step.icon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <span className="text-sm font-bold text-gold mb-2">0{index + 1}</span>
                   <h3 className="text-xl font-bold mb-4">{step.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {step.description}

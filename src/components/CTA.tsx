@@ -13,7 +13,7 @@ export const CTA = () => {
             
             <CardContent className="relative z-10 p-12 text-center">
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                ¿Listo para <span className="gradient-text">tallar</span> tu idea?
+                ¿Listo para <span className="gradient-text">moldear</span> tu idea?
               </h2>
               <p className="text-xl text-muted-foreground mb-4 max-w-3xl mx-auto leading-relaxed">
                 Cuéntanos qué necesitas. En menos de 48 horas te responderemos con una propuesta clara.

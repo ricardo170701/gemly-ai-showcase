@@ -48,7 +48,6 @@ export const Enfoque = () => {
                   <div className="w-16 h-16 bg-gradient-primary rounded-xl flex items-center justify-center mb-6 group-hover:shadow-glow transition-all duration-300">
                     <step.icon className="w-8 h-8 text-primary-foreground" />
                   </div>
-                  <span className="text-sm font-bold text-gold mb-2">0{index + 1}</span>
                   <h3 className="text-xl font-bold mb-4">{step.title}</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     {step.description}

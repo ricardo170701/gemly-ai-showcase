@@ -23,10 +23,10 @@ Saludos cordiales.`,
   }),
 
   softwareMedida: (): EmailTemplate => ({
-    subject: "Solicitud de Cotización - Software a Medida - Gemly",
+    subject: "Deseo saber más sobre Software a Medida - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa solicitar una cotización para el desarrollo de software a medida.
+Deseo saber más sobre el desarrollo de Software a Medida.
 
 Información del proyecto:
 - Tipo de aplicación: [Web/Móvil/Desktop]
@@ -38,7 +38,6 @@ Información de contacto:
 - Nombre:
 - Empresa:
 - Teléfono:
-- Ubicación:
 
 Saludos cordiales.`,
   }),

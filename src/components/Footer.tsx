@@ -1,4 +1,22 @@
 import { Separator } from "@/components/ui/separator";
+import { toast } from "sonner";
+
+const PhoneLink = ({ number }: { number: string }) => {
+  const digits = number.replace(/\s/g, '');
+  const handleClick = (e: React.MouseEvent) => {
+    if (!/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+      e.preventDefault();
+      navigator.clipboard.writeText(number).then(() => {
+        toast.success("Número copiado al portapapeles");
+      });
+    }
+  };
+  return (
+    <a href={`tel:${digits}`} onClick={handleClick} className="hover:text-foreground transition-colors cursor-pointer">
+      {number}
+    </a>
+  );
+};
 
 export const Footer = () => {
   return (

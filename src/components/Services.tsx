@@ -9,35 +9,37 @@ const services = [
     icon: Bot,
     title: "Automatización Inteligente",
     description: "Sistemas que automatizan procesos complejos con IA, reduciendo costos y liberando a tu equipo para lo que importa.",
-    href: "/automatizacion-ai"
+    emailTemplate: () => emailTemplates.automatizacionAI(),
   },
   {
     icon: Brain,
     title: "Machine Learning",
     description: "Modelos que aprenden de tus datos y se adaptan a tu negocio. Predicciones precisas, decisiones inteligentes.",
-    href: "/machine-learning"
+    emailTemplate: () => emailTemplates.machineLearning(),
   },
   {
     icon: Code,
     title: "Software a Medida",
-    description: "Aplicaciones talladas exclusivamente para ti. Sin plantillas genéricas, solo código que encaja como un guante.",
-    href: "/software-medida"
+    description: "Aplicaciones moldeadas exclusivamente para ti. Sin plantillas genéricas, solo código que encaja como un guante.",
+    emailTemplate: () => emailTemplates.softwareMedida(),
   },
   {
     icon: Database,
     title: "Análisis de Datos",
     description: "Transformamos tus datos en decisiones. Dashboards claros, insights accionables, resultados medibles.",
-    href: "/analisis-datos"
+    emailTemplate: () => emailTemplates.analisisDatos(),
   },
   {
     icon: Zap,
     title: "Optimización de Procesos",
-    description: "Identificamos cuellos de botella y los eliminamos con automatización inteligente. Más eficiencia, menos fricción."
+    description: "Identificamos cuellos de botella y los eliminamos con automatización inteligente. Más eficiencia, menos fricción.",
+    emailTemplate: () => emailTemplates.saberMas("Optimización de Procesos"),
   },
   {
     icon: Shield,
     title: "Seguridad & Compliance",
-    description: "Cada solución que entregamos cumple con las mejores prácticas de seguridad. Tu tranquilidad es nuestra prioridad."
+    description: "Cada solución que entregamos cumple con las mejores prácticas de seguridad. Tu tranquilidad es nuestra prioridad.",
+    emailTemplate: () => emailTemplates.saberMas("Seguridad & Compliance"),
   }
 ];
 

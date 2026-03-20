@@ -1,4 +1,22 @@
 import { Separator } from "@/components/ui/separator";
+import { toast } from "sonner";
+
+const PhoneLink = ({ number }: { number: string }) => {
+  const digits = number.replace(/\s/g, '');
+  const handleClick = (e: React.MouseEvent) => {
+    if (!/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+      e.preventDefault();
+      navigator.clipboard.writeText(number).then(() => {
+        toast.success("Número copiado al portapapeles");
+      });
+    }
+  };
+  return (
+    <a href={`tel:${digits}`} onClick={handleClick} className="hover:text-foreground transition-colors cursor-pointer">
+      {number}
+    </a>
+  );
+};
 
 export const Footer = () => {
   return (
@@ -32,8 +50,8 @@ export const Footer = () => {
             <h3 className="font-semibold mb-4">Contacto</h3>
             <ul className="space-y-2 text-muted-foreground">
               <li><a href="mailto:gemlytech@gmail.com" className="hover:text-foreground transition-colors">gemlytech@gmail.com</a></li>
-              <li>+58 414 7905070</li>
-              <li>+58 412 1878514</li>
+              <li><PhoneLink number="+58 414 7905070" /></li>
+              <li><PhoneLink number="+58 412 1878514" /></li>
               <li>Lechería, Edo. Anzoátegui</li>
             </ul>
           </div>

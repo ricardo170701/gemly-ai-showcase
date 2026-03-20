@@ -63,10 +63,10 @@ Saludos cordiales.`,
   }),
 
   automatizacionAI: (): EmailTemplate => ({
-    subject: "Consulta - Automatización IA - Gemly",
+    subject: "Deseo saber más sobre Automatización Inteligente - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa automatizar procesos con IA en mi empresa.
+Deseo saber más sobre la Automatización Inteligente con IA.
 
 Información del proyecto:
 - Procesos a automatizar: 

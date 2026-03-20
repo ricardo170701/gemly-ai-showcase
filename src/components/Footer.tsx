@@ -39,10 +39,10 @@ export const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Servicios</h3>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="/automatizacion-ai" className="hover:text-foreground transition-colors">Automatización IA</a></li>
-              <li><a href="/machine-learning" className="hover:text-foreground transition-colors">Machine Learning</a></li>
-              <li><a href="/software-medida" className="hover:text-foreground transition-colors">Software a Medida</a></li>
-              <li><a href="/analisis-datos" className="hover:text-foreground transition-colors">Análisis de Datos</a></li>
+              <li>Automatización IA</li>
+              <li>Machine Learning</li>
+              <li>Software a Medida</li>
+              <li>Análisis de Datos</li>
             </ul>
           </div>
 

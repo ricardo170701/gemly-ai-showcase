@@ -81,10 +81,10 @@ Saludos cordiales.`,
   }),
 
   analisisDatos: (): EmailTemplate => ({
-    subject: "Solicitud de Análisis de Datos - Gemly",
+    subject: "Deseo saber más sobre Análisis de Datos - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa un análisis de datos para mi empresa.
+Deseo saber más sobre el servicio de Análisis de Datos.
 
 Información del proyecto:
 - Fuentes de datos disponibles:

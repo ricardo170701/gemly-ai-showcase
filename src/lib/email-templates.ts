@@ -98,6 +98,20 @@ Información de contacto:
 
 Saludos cordiales.`,
   }),
+
+  saberMas: (servicio: string): EmailTemplate => ({
+    subject: `Deseo saber más sobre ${servicio} - Gemly`,
+    body: `Hola equipo de Gemly,
+
+Deseo saber más sobre ${servicio}.
+
+Información de contacto:
+- Nombre:
+- Empresa:
+- Teléfono:
+
+Saludos cordiales.`,
+  }),
 };
 
 export const generateMailtoLink = (template: EmailTemplate): string => {

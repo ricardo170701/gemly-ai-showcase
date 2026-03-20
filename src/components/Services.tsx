@@ -73,7 +73,7 @@ export const Services = () => {
                     {service.description}
                   </p>
                   <button 
-                    onClick={() => openEmail(emailTemplates.general())}
+                    onClick={() => openEmail(service.emailTemplate())}
                     className="inline-flex items-center text-sm text-gold hover:text-gold-light transition-colors mt-auto font-medium"
                   >
                     Saber más <ArrowRight className="w-4 h-4 ml-1" />

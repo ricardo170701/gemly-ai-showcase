@@ -44,10 +44,10 @@ Saludos cordiales.`,
   }),
 
   machineLearning: (): EmailTemplate => ({
-    subject: "Consulta Técnica - Machine Learning - Gemly",
+    subject: "Deseo saber más sobre Machine Learning - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa una consulta técnica sobre Machine Learning.
+Deseo saber más sobre Machine Learning y cómo puede ayudar a mi negocio.
 
 Información del proyecto:
 - Descripción del problema a resolver: 

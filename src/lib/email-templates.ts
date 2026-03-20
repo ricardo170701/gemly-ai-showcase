@@ -23,10 +23,10 @@ Saludos cordiales.`,
   }),
 
   softwareMedida: (): EmailTemplate => ({
-    subject: "Solicitud de Cotización - Software a Medida - Gemly",
+    subject: "Deseo saber más sobre Software a Medida - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa solicitar una cotización para el desarrollo de software a medida.
+Deseo saber más sobre el desarrollo de Software a Medida.
 
 Información del proyecto:
 - Tipo de aplicación: [Web/Móvil/Desktop]
@@ -38,16 +38,15 @@ Información de contacto:
 - Nombre:
 - Empresa:
 - Teléfono:
-- Ubicación:
 
 Saludos cordiales.`,
   }),
 
   machineLearning: (): EmailTemplate => ({
-    subject: "Consulta Técnica - Machine Learning - Gemly",
+    subject: "Deseo saber más sobre Machine Learning - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa una consulta técnica sobre Machine Learning.
+Deseo saber más sobre Machine Learning y cómo puede ayudar a mi negocio.
 
 Información del proyecto:
 - Descripción del problema a resolver: 
@@ -63,10 +62,10 @@ Saludos cordiales.`,
   }),
 
   automatizacionAI: (): EmailTemplate => ({
-    subject: "Consulta - Automatización IA - Gemly",
+    subject: "Deseo saber más sobre Automatización Inteligente - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa automatizar procesos con IA en mi empresa.
+Deseo saber más sobre la Automatización Inteligente con IA.
 
 Información del proyecto:
 - Procesos a automatizar: 
@@ -82,14 +81,28 @@ Saludos cordiales.`,
   }),
 
   analisisDatos: (): EmailTemplate => ({
-    subject: "Solicitud de Análisis de Datos - Gemly",
+    subject: "Deseo saber más sobre Análisis de Datos - Gemly",
     body: `Hola equipo de Gemly,
 
-Me interesa un análisis de datos para mi empresa.
+Deseo saber más sobre el servicio de Análisis de Datos.
 
 Información del proyecto:
 - Fuentes de datos disponibles:
 - Objetivos del análisis:
+
+Información de contacto:
+- Nombre:
+- Empresa:
+- Teléfono:
+
+Saludos cordiales.`,
+  }),
+
+  saberMas: (servicio: string): EmailTemplate => ({
+    subject: `Deseo saber más sobre ${servicio} - Gemly`,
+    body: `Hola equipo de Gemly,
+
+Deseo saber más sobre ${servicio}.
 
 Información de contacto:
 - Nombre:

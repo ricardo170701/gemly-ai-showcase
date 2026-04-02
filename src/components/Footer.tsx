@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
+import logo from "@/assets/logo.svg";
 
 const PhoneLink = ({ number }: { number: string }) => {
   const digits = number.replace(/\s/g, '');

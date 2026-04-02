@@ -57,7 +57,7 @@ export const Hero = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-primary/50 text-foreground hover:bg-primary/10 px-8 py-4 text-lg h-auto"
+              className="border-primary/50 text-foreground hover:bg-primary/10 hover:text-foreground px-8 py-4 text-lg h-auto"
               onClick={() => document.getElementById('enfoque')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Conoce nuestro enfoque

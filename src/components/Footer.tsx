@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
 import { toast } from "sonner";
+import logo from "@/assets/logo.svg";
 
 const PhoneLink = ({ number }: { number: string }) => {
   const digits = number.replace(/\s/g, '');
@@ -25,9 +26,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-sm">G</span>
-              </div>
+              <img src={logo} alt="Gemly Logo" className="w-8 h-8" />
               <span className="text-2xl font-bold gradient-text">Gemly</span>
             </div>
             <p className="text-muted-foreground leading-relaxed max-w-md">
